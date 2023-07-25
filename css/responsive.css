@@ -1,0 +1,73 @@
+@media (max-width:700px) {
+    .header .menu-items{
+        background-color: #01143c;
+        position: absolute;
+        width: 50%;
+        height: 90%;
+        left: 0;
+        top: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: all .5s ease-in-out;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px #727272;
+        transform: translateX(200%);
+    }
+    .menu-items a{
+        width: 90%;
+        height: 40px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+    .header .hamburguesa{
+        display: flex !important;
+        position: absolute;
+        top: 0;
+        right: 2em;
+    }
+    .menu-items.activo{
+        transform: translateX(100%);
+    }
+    .catalogo-menu  a{
+        display: none !important;
+    }
+    .catalogo-menu{
+        justify-content: start !important;
+    }
+    .selecion-mobiles{
+        display: flex !important;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto div{margin: 1em 0 0 0;}
+    .contacto .contacto-items input[type=text]{
+        height: 20px;
+        margin: 2px;
+        padding: .8em;
+        border-radius: 0;
+        font-size: 16px;
+    }
+    .contacto-items input[type=submit]{
+        width: 30%;
+        height: 30px;
+        margin: 2px 0 0 0;
+        padding: 2px;
+        font-size: 14px;
+        border-radius: 0;
+        overflow: hidden;
+    }
+    .asesor{display: none !important;}
+    footer .enlaces-menu-inicio{display: none !important;}
+    footer{
+        display: flex !important;
+        flex-direction: column;
+    }
+}
