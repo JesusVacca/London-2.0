@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-main:#01143c;
+    --bnt-comprar:#7f0b18;
+    --color-pie-pagina:#000000c9;
+    --color-titulo:#fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--bnt-comprar);
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .formulario-contentedor{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    background: var(--color-main);
+    margin: 3em 0 0 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px var(--color-pie-pagina);
+    border-radius: 0 40px;
+}
+
+.formulario-contentedor .formulario{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-35deg, var(--bnt-comprar),var(--color-main),var(--color-titulo));
+}
+.formulario h2{
+    font-family: monospace;
+    font-size: 25px;
+    color: var(--color-titulo);
+    text-shadow: 2px 2px 20px black;
+    position: absolute;
+    top: 5%;
+}
+.formulario input{
+    margin: 1em;
+    padding: .4em;
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.formulario input[type=submit]{
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid var(--bnt-comprar) ;
+    color: var(--color-titulo);
+    box-shadow: 2px 2px 20px var(--color-titulo);
+    font-family: monospace;
+    text-shadow: 2px 2px 20px black;
+
+}
+.formulario input[type=submit]:hover{
+    transition: all .2s ease-in;
+    color: white;
+    background: var(--bnt-comprar);
+    box-shadow: none;
+    opacity: .8;
+
+}
+.container .atras{
+    background-color:var(--color-titulo);
+    opacity: .6;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+.atras .mensaje{
+    background-color: var(--color-titulo);
+    color: var(--bnt-comprar);
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 2em;
+    right: .1em;
+    font-size: 20px;
+    font-family: monospace;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+.atras:hover{
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+.atras:hover .mensaje{display: flex;}
+.atras img{
+    width: 70%;
+    height: 70%;
+}

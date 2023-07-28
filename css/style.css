@@ -7,6 +7,7 @@
     --color-main:#01143c;
     --bnt-comprar:#7f0b18;
     --color-pie-pagina:#000000c9;
+    --color-titulo:#fff;
 }
 .main{
     width: 100%;
@@ -36,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--color-titulo);
 }
 .header .menu-items{
     width: 100%;
@@ -237,11 +238,17 @@
 }
 .contacto .contacto-items form{
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.contacto-items h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    color: var(--color-titulo);
 }
 .contacto .contacto-items input[type=text]{
     width: 80%;
@@ -293,7 +300,7 @@
 }
 .ventana-modal .modal-content{
     width: 80%;
-    height: 60%;
+    height: 50%;
     position: relative;
     background:linear-gradient(-30deg,var(--bnt-comprar),#fff,var(--color-main));
     border-radius: 5px;
