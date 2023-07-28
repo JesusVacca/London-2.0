@@ -1,7 +1,8 @@
 const hamburguesa = document.getElementById("hamburguesa");
 const enlaces_catalogo = document.querySelectorAll(".enlaces-catalogo");
 const close_modal = document.getElementById("close-modal");
-
+const fecha = document.getElementById("fecha");
+fecha.innerText =` ${new Date().getFullYear()}`;
 
 enlaces_catalogo.forEach((cadaEnlace,i)=>{
     enlaces_catalogo[i].addEventListener("click",(e)=>{
